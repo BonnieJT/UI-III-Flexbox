@@ -31,8 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
+/*ol, ul {
+	list-style: none;*/
 }
 blockquote, q {
 	quotes: none;
@@ -63,4 +63,354 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+.container {
+	margin: 0 auto;
+	width: 720px;
+}
+
+.header {
+	position: relative;
+}
+
+.header-nav {
+	margin-top: 15px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	background: lightcyan;
+	z-index: 10;
+}
+
+.header-nav-item {
+	color: gray;
+	font-size: 12px;
+	padding: 0 48px 0 0;
+	text-decoration: none;
+}
+
+.header-nav-logo {
+	padding: 0;
+	text-align: right;
+}
+
+.hero {
+	padding-top: 55px;	
+}
+
+.hero-header {
+	display: flex;
+	height: 400px;
+	width: 100%;
+	position: relative;
+	padding: 55px 0;
+}
+
+.hero-header-tag {
+	position: relative;
+	font-size: 60px;
+	width: 55%;
+	top: 15%;
+	text-align: center;
+	line-height: 50px;
+	padding-left: 30px;
+	vertical-align: top;
+}
+
+.hero-header-tag-btn {
+	width: 140px;
+}
+
+.hero-header-img {
+	width:44%;
+	padding-left: 30px;
+	text-align: right;
+}
+
+.main {
+	border-top: 1px solid gray;
+}
+
+.main-top {
+	margin: 30px 0;
+	display: flex;
+}
+
+.main-top-features {
+	width: 49%;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.main-top-features-title {
+	font-size: 16px;	
+}
+
+.main-top-about {
+	width: 49%;
+}
+
+.main-top-about-para {
+	font-size: 14px;
+}
+
+.body-hero {
+	margin-bottom: 30px;
+}
+
+.body-hero-img {
+	width: 100%;
+}
+
+.main-bottom {
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.main-bottom-services {
+	width: 32%;
+}
+
+.main-bottom-services-para {
+	font-size: 14px;
+}
+
+.main-bottom-product {
+	width: 32%;
+	margin: 0 10px;
+}
+
+.main-bottom-product-para {
+	font-size: 14px;
+}
+
+.main-bottom-vision {
+	width: 32%;
+}
+
+.main-bottom-vision-para {
+	font-size: 14px;
+}
+
+.contact {
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+
+.contact-title {
+	font-size: 16px;
+}
+
+.footer {
+	margin: 0 auto;
+	width: 720px;
+}
+
+.footer-copyright {
+	text-align: center;
+	font-size: 14px;
+}
+
+.intro {
+	padding-top: 55px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+	font-size: 14px;
+}
+
+.intro-hero {
+	display: flex;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.intro-hero-img {
+	width: 100%;
+}
+
+.intro-article {
+
+}
+
+.intro-article-title {
+ font-size: 25px;
+}
+
+.intro-article-para {
+
+}
+
+.intro-hero-title {
+	font-size: 18px;
+}
+
+.intro-hero-para {
+	padding-bottom: 20px;
+}
+
+.article {
+	display: flex;
+	width: 100%;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+	border-bottom: 1px solid black;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.article-digitaldesign {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE;
+}
+
+.article-digitaldesign-title {
+
+}
+
+.article-digitaldesign-para {
+	margin: 10px 0;
+}
+
+.article-digitaldesign-btn {
+	
+}
+
+.article-uxui {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE;
+}
+
+.article-uxui-title {
+
+}
+
+.article-uxui-para {
+	margin: 10px 0;
+}
+
+.article-uxui-btn {
+
+}
+
+.article-digitalmktg {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE;
+}
+
+.article-digitalmktg-title {
+
+}
+
+.article-digitalmktg-para {
+	margin: 10px 0;
+}
+
+.article-digitalmktg-btn {
+
+}
+
+.article-webdev {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE
+}
+
+.article-webdev-title {
+
+}
+
+.article-webdev-para {
+	margin: 10px 0;
+}
+
+.article-webdev-btn {
+
+}
+
+.article-iOSdev {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE;
+}
+
+.article-iOSdev-title {
+
+}
+
+.article-iOSdev-para {
+	margin: 10px 0;
+}
+
+.article-iOSdev-btn {
+
+}
+
+.article-androiddev {
+	width: 350px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	background: #EEEEEE
+}
+
+.article-androiddev-title {
+
+}
+
+.article-androiddev-para {
+	margin: 10px 0;
+}
+
+.article-androiddev-btn {
+
+}
+
+.outro {
+	display: flex;
+	padding: 20px 0;
+	justify-content: space-between;
+}
+
+.outro-text {
+	width: 350px;
+	font-size: 14px;
+}
+
+.outro-title {
+
+}
+
+.outro-para {
+	margin-bottom: 20px;
+	
+}
+
+.outro-ul {
+padding: 0 30px;	
+}
+
+.outro-ul-item {
+	line-height: 2;
+	text-indent: 10px;
+}
+
+.outro-hero {
+	width: 325px;
+}
+
+.outro-hero-img {
+	width: 325px;
+}
